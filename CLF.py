@@ -1,6 +1,5 @@
 import os
 import random
-# import secrets
 
 # pre game
 os.system('cls')
