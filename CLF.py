@@ -1,15 +1,18 @@
-import os
 import random
 
 # pre game
-os.system('cls')
+
+def printer(x):
+    i=0
+    while (i<x):
+        printf()
+        i+=1
+
 
 # welcome phrase 1
-welcome = "◘ Welcomed To CLF ◘ ".center(120)
+welcome = "Welcomed To CLF".center(120)
 print(welcome)
-print()
-print()
-print()
+printer(3)
 
 
 # asking for the name
@@ -17,10 +20,7 @@ name = ''
 while(name == ""):
     name = input(" « enter your name please » ")
     print()
-
-print()
-print()
-print()
+printer(4)
 
 
 # welcome phrase 2
@@ -28,10 +28,7 @@ name = name.upper()
 welcome1 = " Hello "+name+' '
 welcome1 = welcome1.center(120)
 print(welcome1)
-print()
-print()
-print()
-print()
+printer(4)
 
 # NB of rounds
 rounds = 0
@@ -61,13 +58,11 @@ def clrscr():
     response = input(
         "Wanna clear the screen before starting ? type 'yes to confirm '")
     if response == 'yes':
-        os.system('cls')
 
 
 def clrscr2():
     response = input(" type 'continue' to proceed ")
     if response == 'continue':
-        os.system('cls')
 
 
 clrscr()
@@ -106,11 +101,7 @@ while game:
         print('total: ' + str(total))
         print('player score: ' + str(scorep))
         print('coputer score: ' + str(scorec))
-
-        print()
-        print()
-        print()
-        print()
+        printer(4)
 
     if scorec > scorep:
         print(
@@ -120,11 +111,7 @@ while game:
     else:
         print('WOW! did you just beat a Computer?! , you are so SMART !!!')
         fullscorep += 1
-
-    print()
-    print()
-    print()
-    print()
+        printer(4)
 
     clrscr2()
 
@@ -137,4 +124,3 @@ while game:
     if not rpt == 'yes':
         game = False
     else:
-        os.system('cls')
