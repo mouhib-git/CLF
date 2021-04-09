@@ -1,8 +1,4 @@
 import random
-#test for git
-
-# pre game
-
 def printer(x):
     i=0
     while (i<x):
